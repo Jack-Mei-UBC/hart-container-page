@@ -3,7 +3,7 @@
     <head>
       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
     </head>
-    <iframe id="map" src="http://localhost:8000/page1"></iframe>
+    <iframe id="map" src="https://docker-test-rigsby.koyeb.app/page1"></iframe>
     <div>
         <label for="pageSelect">Select a Page:</label>
         <select id="pageSelect" onchange="showPage()">
@@ -14,15 +14,15 @@
     </div>
 
     <div class="page-mainpage" id="page1">
-        <iframe id = "page1frame" src="http://localhost:8000/page2"></iframe>
+        <iframe id = "page1frame" src="https://docker-test-rigsby.koyeb.app/page2"></iframe>
     </div>
 
     <div class="page-mainpage" id="page2">
-        <iframe id = "page2frame" src="http://localhost:8000/page3"></iframe>
+        <iframe id = "page2frame" src="https://docker-test-rigsby.koyeb.app/page3"></iframe>
     </div>
 
     <div class="page-mainpage" id="page3">
-        <iframe id = "page3frame" src="http://localhost:8000/page4"></iframe>
+        <iframe id = "page3frame" src="https://docker-test-rigsby.koyeb.app/page4"></iframe>
     </div>
     <script src="{{url_for('static', filename='selectpage.js')}}"></script>
 
