@@ -1,0 +1,31 @@
+
+<html>
+    <head>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    </head>
+    <iframe id="map" src="http://localhost:8000/page1"></iframe>
+    <div>
+        <label for="pageSelect">Select a Page:</label>
+        <select id="pageSelect" onchange="showPage()">
+            <option value="page1">Page 1</option>
+            <option value="page2">Page 2</option>
+            <option value="page3">Page 3</option>
+        </select>
+    </div>
+
+    <div class="page-mainpage" id="page1">
+        <iframe id = "page1frame" src="http://localhost:8000/page2"></iframe>
+    </div>
+
+    <div class="page-mainpage" id="page2">
+        <iframe id = "page2frame" src="http://localhost:8000/page3"></iframe>
+    </div>
+
+    <div class="page-mainpage" id="page3">
+        <iframe id = "page3frame" src="http://localhost:8000/page4"></iframe>
+    </div>
+    <script src="{{url_for('static', filename='selectpage.js')}}"></script>
+
+
+</html>
+
